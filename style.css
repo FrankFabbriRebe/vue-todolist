@@ -5,6 +5,6 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+.done {
+    text-decoration: line-through;
 }
