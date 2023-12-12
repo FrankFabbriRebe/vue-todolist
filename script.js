@@ -28,5 +28,17 @@ createApp({
 
     methods: {
 
+        addTask() {
+            this.todos.unshift
+            ({
+                text: this.message,
+                done: false
+            });
+            this.message =""
+        },
+
     }
 }).mount('#app')
+
+
+
