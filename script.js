@@ -37,6 +37,10 @@ createApp({
             this.message =""
         },
 
+        deleteTask(i) {
+            this.todos.splice(i, 1)         
+            }
+
     }
 }).mount('#app')
 
