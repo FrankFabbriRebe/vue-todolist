@@ -17,6 +17,24 @@
 
     <div id="app">
         
+        <!-- input -->
+        <div class="input">
+
+            <input type="text" placeholder="Inserisci qui la nuova task">
+            <button>Aggiungi</button>
+
+        </div>
+
+        <!-- to do list -->
+        <div class="list">
+            <ul>
+                <li v-for="(obj, i) in todos">
+                    {{todos[i].text}}
+                </li>
+            </ul>
+        </div>
+        
+
     </div>
     
     <!-- link script.js -->
