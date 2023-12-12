@@ -28,8 +28,9 @@
         <!-- to do list -->
         <div class="list">
             <ul>
-                <li v-for="(obj, i) in todos" :class="{'done': todos[i].done}">
+                <li v-for="(obj, i) in todos" :key="i" :class="{'done': todos[i].done}">
                     {{todos[i].text}}
+                    <span @click="deleteTask">X</span>
                 </li>
             </ul>
         </div>
