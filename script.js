@@ -4,6 +4,9 @@ createApp({
 
     data() {
 		return {
+
+            message: "",
+
 	        todos: [
                 {
                     text: 'Fare i compiti',
